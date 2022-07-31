@@ -3,10 +3,12 @@ pragma solidity ^0.5.0;
 import "./KaseiCoin.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/Crowdsale.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/emission/MintedCrowdsale.sol";
-// import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/validation/CappedCrowdsale.sol";
+//import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/validation/CappedCrowdsale.sol"
+//import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/validation/TimedCrowdsale.sol";
 
 
 
+//contract KaseiCoinCrowdsale is Crowdsale, MintedCrowdsale, CappedCrowdsale, TimedCrowdsale { 
 contract KaseiCoinCrowdsale is Crowdsale, MintedCrowdsale{ 
     
     // Provide parameters for all of the features of your crowdsale, such as the `rate`, `wallet` for fundraising, and `token`.
@@ -22,11 +24,14 @@ contract KaseiCoinCrowdsale is Crowdsale, MintedCrowdsale{
     constructor(
         uint256 rate,
         address payable wallet,
-        KaseiCoin token,
-        uint256 _cap
+        KaseiCoin token	
+        //uint256 _cap,
+	//uint256 start_time,
+	//uint256 end_time,
     )
       Crowdsale(rate, wallet, token)
-    //   CappedCrowdsale(_cap)
+      //CappedCrowdsale(_cap)
+      //TimedCrowdsale(_start_time, _end_time)
       public
     {
         // constructor can stay empty
@@ -62,7 +67,8 @@ contract KaseiCoinCrowdsaleDeployer {
         kasei_token_address = address(token);
 
         KaseiCoinCrowdsale kasei_crowdsale = 
-            new KaseiCoinCrowdsale(1, wallet, token, 50000000000000000000);
+            new KaseiCoinCrowdsale(1, wallet, token);
+            //new KaseiCoinCrowdsale(1, wallet, token, 50000000000000000000, now, now + 24 weeks);
         kasei_crowdsale_address = address(kasei_crowdsale);
 
         token.addMinter(kasei_crowdsale_address);
