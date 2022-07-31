@@ -1,27 +1,38 @@
-1.Once we deployed
-![deploynment](Execution_Results/01_deploynment.png)
+1.Once we compiled KasieCoin
+![kasei_coin_compilation](Execution_Results/kasei_coin_compilation.png)
 
-2.Initial balance
-![initial_balance](Execution_Results/02_balance.png)
+2.CrowdSale Compilation
+![kasei_crowdsale_compilation](Execution_Results/kasei_crowdsale_compilation.png)
 
-3.Setting accounts
-![setAccount](Execution_Results/03_setAccounts.png)
+3.CrowdSale Deployer Compilation
+![kasei_crowdsale_deployer_compilation](Execution_Results/kasei_crowdsale_deployer_compilation.png)
 
-4.Initial Deposit
-![initial_deposit](Execution_Results/04_deposit.png)
+4.Metamask confirmation
+![metamast_screenshot](Execution_Results/metamast_screenshot.png)
 
-5.Transaction #1
-![transaction_1](Execution_Results/05_transaction_1.png)
+5.Metamask connected 
+![metamask_crowdsale_deployer](Execution_Results/metamask_crowdsale_deployer.png)
 
-6.Transaction #2
-![transaction_2](Execution_Results/06_transaction_2.png)
+6.Kasei deployment crowdsale
+![kasei_deployment_crowdsale](Execution_Results/kasei_deployment_crowdsale.png)
 
-7.Transaction #3
-![transaction_3](Execution_Results/07_transaction_3.png)
+7.Kasei Deployment Sale
+![kasei_deployment_sale](Execution_Results/kasei_deployment_sale.png)
 
-8.Revertion due to the wrong account number
-![revert](Execution_Results/08_revert.png)
+8.Kasei Switched Account
+![kasei_switched_account](Execution_Results/kasei_switched_account.png)
+
+9.Kasei coins purchase
+![kasei_bought_coins](Execution_Results/kasei_bought_coins.png)
+
+10.Kasei coins purchase
+![kasei_balance_check](Execution_Results/kasei_balance_check.png)
 
 
-9.Revertion due to insufficient balance
-![insufficient_balance](Execution_Results/09_insufficient_balance.png)
+
+
+
+
+
+
+
